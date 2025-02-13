@@ -1,6 +1,6 @@
 "use client";
 import BackgroundLayout from "../components/Background";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
