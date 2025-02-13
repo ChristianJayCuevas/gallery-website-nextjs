@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 export default function Calendar() {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
     const [isWrongDate, setIsWrongDate] = useState(false);
@@ -63,10 +64,12 @@ export default function Calendar() {
                         className="mt-4 p-4 bg-red-500 text-white rounded-lg shadow-lg"
                     >
                         <p className="text-lg font-bold">You are not meme!</p>
-                        <img 
+                        <Image 
                             src="/images/Slap Mocking Sticker.gif" 
                             alt="Not meme sticker" 
                             className="mx-auto mt-2 w-32 h-32"
+                            width={400}   // Adjust based on your layout
+  height={300} 
                         />
                     </motion.div>
                 )}

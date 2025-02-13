@@ -3,6 +3,7 @@ import BackgroundLayout from "../components/Background";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
+import Image from "next/image";
 export default function Gallery() {
     const router = useRouter();
     const pathname = usePathname(); // Get current route
@@ -83,12 +84,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-20"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Me & Meme.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
@@ -107,12 +110,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration:  0.5 }}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-10"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Me & Meme 2.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
@@ -130,12 +135,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration:  0.5 }}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-10"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Me & Meme 3.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
@@ -153,12 +160,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration:  0.5 }}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-10"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Foods 1.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
@@ -176,12 +185,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration:  0.5}}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-10"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Me & meme 4.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
@@ -199,12 +210,14 @@ export default function Gallery() {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration:  0.5 }}
                 className="card z-20 bg-white/25 shadow-lg backdrop-blur-sm border border-white/50 rounded-lg shadow-xl mt-10"
             >
                 <figure>
-                    <img
+                    <Image
                         src="/images/Foods 2.jpg"
+                        width={400}   // Adjust based on your layout
+  height={300} 
                         alt="Me & Meme" />
                 </figure>
                 <div className="card-body">
