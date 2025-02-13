@@ -3,11 +3,9 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
-// Define the type for children
 interface BackgroundLayoutProps {
   children: ReactNode;
 }
-
 export default function BackgroundLayout({ children }: BackgroundLayoutProps) {
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen text-center p-6 bg-gradient-to-b from-[#FFE7EC] to-[#F3E8F7] overflow-hidden">

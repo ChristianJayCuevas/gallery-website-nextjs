@@ -15,7 +15,7 @@ const AnimatedLoader = () => {
   }, []);
 
   const handleButtonClick = () => {
-    router.push("/newpage");
+    router.push("/question");
   };
 
   return (
